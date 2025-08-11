@@ -1,0 +1,53 @@
+/* styles.css */
+
+/* Reset some default margins and paddings */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* App container with side-by-side layout */
+.app-container {
+  display: flex;
+  height: 100vh; /* full viewport height */
+  background-color: #f9f9f9;
+}
+
+/* Company list sidebar */
+.company-list {
+  width: 250px;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+  padding: 10px;
+  background-color: #fff;
+}
+
+/* Individual company item */
+.company-item {
+  padding: 10px 8px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s ease;
+  user-select: none;
+}
+
+.company-item:hover {
+  background-color: #e6f0ff;
+}
+
+/* Stock chart container */
+.stock-chart-container {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  overflow-y: auto;
+}
+
+/* Message shown when no company selected */
+.select-message {
+  padding: 20px;
+  font-size: 1.1rem;
+  color: #555;
+}
