@@ -3,6 +3,7 @@ import axios from "axios";
 import CompanyList from "./CompanyList";
 import StockChart from "./StockChart";
 
+const API_BASE=process.env.REACT_APP_API_BASE;
 export default function App() {
   const [companies, setCompanies] = useState([]);
   const [selectedSymbol, setSelectedSymbol] = useState(null);
@@ -10,7 +11,7 @@ export default function App() {
 
   useEffect(() => {
     // Fetch company list
-    axios.get("http://127.0.0.1:9000/companies")
+    axios.get(`${API_BASE}/companies`)
       .then(res => setCompanies(res.data))
       .catch(err => console.error(err));
   }, []);
@@ -18,7 +19,7 @@ export default function App() {
   useEffect(() => {
     if (!selectedSymbol) return;
     // Fetch stock data for selected company
-    axios.get(`http://127.0.0.1:9000/stock/${selectedSymbol}`)
+    axios.get(`${API_BASE}/stock/${selectedSymbol}`)
       .then(res => setStockData(res.data))
       .catch(err => {
         console.error(err);
