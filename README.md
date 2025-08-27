@@ -9,8 +9,6 @@ A full-stack stock dashboard application that fetches and visualizes real-time o
 - Responsive and interactive charts
 - Company search and stock details view
 
----
-
 ## 🛠️ Tech Stack
 **Frontend:**
 - React.js
@@ -24,8 +22,6 @@ A full-stack stock dashboard application that fetches and visualizes real-time o
 - REST API for frontend requests
 - Deployed on **Render**
 
----
-
 ## 📂 Project Structure
 .
 ├── backend/ # Express.js API
@@ -38,16 +34,12 @@ A full-stack stock dashboard application that fetches and visualizes real-time o
 │ └── public/
 └── README.md
 
-yaml
-Copy
-Edit
-
 ---
 
 ## ⚙️ Local Development
 
 ### 1️⃣ Clone the repo
-```bash
+
 git clone https://github.com/Aashish-2907/Stock-Dashboard
 cd stock-dashboard
 2️⃣ Backend Setup
@@ -77,7 +69,6 @@ Set PORT environment variable on Render
 
 🔧 Environment Variables
 Backend:
-
 
 PORT=9000
 API_KEY=your_api_key_here
