@@ -61,8 +61,7 @@ Frontend (Vercel):
 Push changes to main branch → Vercel auto-deploys
 
 Backend (Render):
-Deploy Express server as a web service
-
+Deploy FastAPI server as a web service
 Set PORT environment variable on Render
 
 ## 🔧 Environment Variables
