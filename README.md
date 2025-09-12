@@ -2,12 +2,13 @@
 
 A full-stack stock dashboard application that fetches and visualizes real-time or historical company stock data.
 
-## 🚀 Features
-- Frontend built with **React.js** (Vercel deployment)
-- Backend built with **Node.js + Express** (Render deployment)
-- Data fetching via **Axios**
-- Responsive and interactive charts
-- Company search and stock details view
+##🚀 Features
+
+Frontend built with React.js (Vercel deployment)
+Backend built with FastAPI (Render deployment)
+Data fetching via Axios
+Responsive and interactive charts
+Company search and stock details view
 
 ## 🛠️ Tech Stack
 **Frontend:**
@@ -17,21 +18,21 @@ A full-stack stock dashboard application that fetches and visualizes real-time o
 - Deployed on **Vercel**
 
 **Backend:**
-- Node.js + Express
-- CORS enabled
-- REST API for frontend requests
-- Deployed on **Render**
+Python + FastAPI
+CORS enabled
+REST API for frontend requests
+Deployed on Render
 
 ## 📂 Project Structure
 .
-├── backend/ # Express.js API
-│ ├── package.json
-│ ├── server.js
-│ └── ...
-├── frontend/ # React.js app
-│ ├── package.json
-│ ├── src/
-│ └── public/
+├── backend/             # FastAPI app
+│   ├── requirements.txt
+│   ├── main.py
+│   └── ...
+├── frontend/            # React.js app
+│   ├── package.json
+│   ├── src/
+│   └── public/
 └── README.md
 
 ---
@@ -45,36 +46,32 @@ cd stock-dashboard
 2️⃣ Backend Setup
 
 cd backend
-npm install
-npm start
-Runs backend on http://localhost:9000
+pip install -r requirements.txt
+uvicorn main:app --reload --port 9000
 
 3️⃣ Frontend Setup
 
 cd ../frontend
 npm install
 npm start
-Runs frontend on http://localhost:3000
 
-🌐 Deployment
+## 🌐 Deployment
+
 Frontend (Vercel):
-
 Push changes to main branch → Vercel auto-deploys
 
 Backend (Render):
-
 Deploy Express server as a web service
 
 Set PORT environment variable on Render
 
-🔧 Environment Variables
-Backend:
+## 🔧 Environment Variables
 
+Backend:
 PORT=9000
 API_KEY=your_api_key_here
+
 Frontend:
-
-
 REACT_APP_API_BASE_URL=https://your-backend-url.onrender.com
 📸 Screenshots
 
